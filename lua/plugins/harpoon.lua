@@ -79,19 +79,19 @@ return {
       end, { desc = "Harpoon buffer 4" })
 
       vim.keymap.set("n", "<leader>hd1", function()
-        harpoon:list():remove(1)
+        harpoon:list():removeAt(1)
       end, { desc = "Delete harpoon buffer 1" })
 
       vim.keymap.set("n", "<leader>hd2", function()
-        harpoon:list():remove(2)
+        harpoon:list():removeAt(2)
       end, { desc = "Delete harpoon buffer 2" })
 
       vim.keymap.set("n", "<leader>hd3", function()
-        harpoon:list():remove(3)
+        harpoon:list():removeAt(3)
       end, { desc = "Delete harpoon buffer 3" })
 
       vim.keymap.set("n", "<leader>hd4", function()
-        harpoon:list():remove(4)
+        harpoon:list():removeAt(4)
       end, { desc = "Delete harpoon buffer 4" })
 
       vim.keymap.set("n", "<leader>hdd", function()

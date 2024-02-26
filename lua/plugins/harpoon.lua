@@ -90,7 +90,7 @@ return {
         harpoon:list():remove(3)
       end, { desc = "Delete harpoon buffer 3" })
 
-      vim.keymap.set("n", "<leader>hd4>", function()
+      vim.keymap.set("n", "<leader>hd4", function()
         harpoon:list():remove(4)
       end, { desc = "Delete harpoon buffer 4" })
 

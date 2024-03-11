@@ -1,14 +1,14 @@
 -- Indentation
-vim.api.nvim_exec(
-  [[
-  augroup python_indentation
-    autocmd!
-    autocmd FileType python setlocal tabstop=2 shiftwidth=2
-    autocmd FileType python autocmd BufWritePre <buffer> :normal! gg=G
-  augroup END
-]],
-  false
-)
+-- vim.api.nvim_exec(
+--   [[
+--   augroup python_indentation
+--     autocmd!
+--     autocmd FileType python setlocal tabstop=2 shiftwidth=2
+--     autocmd FileType python autocmd BufWritePre <buffer> :normal! gg=G
+--   augroup END
+-- ]],
+--   false
+-- )
 
 -- Auto Enable venv selector
 vim.api.nvim_create_autocmd("VimEnter", {

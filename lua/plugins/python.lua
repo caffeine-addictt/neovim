@@ -26,7 +26,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = { mason = false, autostart = false },
+        pyright = { mason = true, autostart = true },
         ruff_lsp = {},
         rust_analyzer = {},
       },

@@ -14,7 +14,7 @@ return {
       neovim_image_text = "Neovim #1", -- Text displayed when hovered over the Neovim image
       main_image = "file", -- Main image display (either "neovim" or "file")
       client_id = "793271441293967371", -- Use your own Discord application client id (not recommended)
-      log_level = "info", -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error", nil)
+      log_level = "warn", -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error", nil)
       debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
       enable_line_number = false, -- Displays the current line number instead of the current project
       blacklist = { ".env" }, -- A list of strings or Lua patterns that disable Rich Presence if the current file name, path, or workspace matches

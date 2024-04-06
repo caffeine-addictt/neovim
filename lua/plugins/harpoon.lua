@@ -34,7 +34,7 @@ return {
 
       -- Quick Access Keybinds
       vim.keymap.set("n", "<leader>a", function()
-        harpoon:list():append()
+        harpoon:list():add()
       end, { desc = "Add file to harpoon" })
 
       vim.keymap.set("n", "<leader>1", function()
@@ -59,7 +59,7 @@ return {
       end, { desc = "Show harpoon marks" })
 
       vim.keymap.set("n", "<leader>ha", function()
-        harpoon:list():append()
+        harpoon:list():add()
       end, { desc = "Add file to harpoon" })
 
       vim.keymap.set("n", "<leader>h1", function()
@@ -79,19 +79,19 @@ return {
       end, { desc = "Harpoon buffer 4" })
 
       vim.keymap.set("n", "<leader>hd1", function()
-        harpoon:list():removeAt(1)
+        harpoon:list():remove_at(1)
       end, { desc = "Delete harpoon buffer 1" })
 
       vim.keymap.set("n", "<leader>hd2", function()
-        harpoon:list():removeAt(2)
+        harpoon:list():remove_at(2)
       end, { desc = "Delete harpoon buffer 2" })
 
       vim.keymap.set("n", "<leader>hd3", function()
-        harpoon:list():removeAt(3)
+        harpoon:list():remove_at(3)
       end, { desc = "Delete harpoon buffer 3" })
 
       vim.keymap.set("n", "<leader>hd4", function()
-        harpoon:list():removeAt(4)
+        harpoon:list():remove_at(4)
       end, { desc = "Delete harpoon buffer 4" })
 
       vim.keymap.set("n", "<leader>hdd", function()

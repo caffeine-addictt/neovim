@@ -1,11 +1,14 @@
 -- Core configuration
 return {
+  -- Configuring theme
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
     },
   },
+
+  -- Discord rich presence
   {
     "andweeb/presence.nvim",
     opts = {

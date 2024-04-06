@@ -41,6 +41,11 @@ return {
     "michaelrommel/nvim-silicon",
     lazy = true,
     cmd = "Silicon",
+    init = function()
+      require("which-key").register({
+        ["<leader>sc"] = { ":Silicon<CR>", "Silicon screenshot" },
+      }, { mode = "v" })
+    end,
     config = function()
       require("silicon").setup({
         font = "JetBrainsMono Nerd Font=34;Noto Color Emoji=34",

@@ -35,4 +35,22 @@ return {
       line_number_text = "Line %s out of %s", -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
     },
   },
+
+  -- For code screenshots
+  {
+    "michaelrommel/nvim-silicon",
+    lazy = true,
+    cmd = "Silicon",
+    config = function()
+      require("silicon").setup({
+        font = "JetBrainsMono Nerd Font=34;Noto Color Emoji=34",
+        theme = "Dracula",
+        background = "#242424",
+        language = function()
+          return vim.bo.filetype
+        end,
+        to_clipboard = true,
+      })
+    end,
+  },
 }

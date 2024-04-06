@@ -1,4 +1,4 @@
--- Set color scheme and fonts
+-- Core configuration
 return {
   {
     "LazyVim/LazyVim",

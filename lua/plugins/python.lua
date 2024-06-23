@@ -1,9 +1,12 @@
 -- Auto Enable venv selector
 vim.api.nvim_create_autocmd("VimEnter", {
-  desc = "Auto Select venv on NvimEnter",
+  desc = "Auto select virtualenv Nvim open",
   pattern = "*",
   callback = function()
-    require("venv-selector").retrieve_from_cache()
+    local venv = vim.fn.findfile("pyproject.toml", vim.fn.getcwd() .. ";")
+    if venv ~= "" then
+      require("venv-selector").retrieve_from_cache()
+    end
   end,
   once = true,
 })
@@ -25,19 +28,14 @@ return {
   {
     "linux-cultist/venv-selector.nvim",
     dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+    opts = {
+      name = "venv",
+      auto_refresh = true,
+    },
     event = "VeryLazy",
-    opts = function(_, opts)
-      if require("lazyvim.util").has("nvim-dap-python") then
-        opts.dap_enabled = true
-      end
-      return vim.tbl_deep_extend("force", opts, {
-        name = {
-          "venv",
-          ".venv",
-          "env",
-          ".env",
-        },
-      })
-    end,
+    keys = {
+      { "<leader>vs", "<cmd>VenvSelect<cr>" },
+      { "<leader>vc", "<cmd>VenvSelectCached<cr>" },
+    },
   },
 }

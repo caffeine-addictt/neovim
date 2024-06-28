@@ -24,10 +24,18 @@ return {
     },
   },
 
+  {
+    "mfussenegger/nvim-dap",
+    opts = {},
+    config = function() end,
+  },
+
   -- Venv selector
   {
     "linux-cultist/venv-selector.nvim",
     dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+    config = function() end,
+    setup = function() end,
     opts = {
       name = "venv",
       auto_refresh = true,

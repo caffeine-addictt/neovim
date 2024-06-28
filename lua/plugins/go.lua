@@ -1,6 +1,4 @@
 return {
-  { "lazyvim.plugins.extras.lang.go" },
-
   -- HTML/CSS Auto Indenting
   {
     "hrsh7th/nvim-cmp",

@@ -18,6 +18,9 @@ require("lazy").setup({
     -- Python
     { import = "lazyvim.plugins.extras.lang.python" },
 
+    -- C#
+    { import = "lazyvim.plugins.extras.lang.omnisharp" },
+
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },

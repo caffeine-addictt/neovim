@@ -32,7 +32,7 @@ return {
       require("venv-selector").setup()
     end,
     keys = {
-      { ",v", "<cmd>VenvSelect<cr>" },
+      { "vs", "<cmd>VenvSelect<cr>" },
     },
   },
 }

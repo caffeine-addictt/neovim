@@ -14,9 +14,9 @@ return {
     lazy = true,
     cmd = "Silicon",
     init = function()
-      require("which-key").register({
-        ["<leader>sc"] = { ":Silicon<CR>", "Silicon screenshot" },
-      }, { mode = "v" })
+      require("which-key").add({
+        { "<leader>sc", ":Silicon<CR>", desc = "Silicon screenshot", mode = "v" },
+      })
     end,
     config = function()
       require("silicon").setup({

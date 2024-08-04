@@ -21,6 +21,9 @@ require("lazy").setup({
     -- C#
     { import = "lazyvim.plugins.extras.lang.omnisharp" },
 
+    -- Rust
+    { import = "lazyvim.plugins.extras.lang.rust" },
+
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
